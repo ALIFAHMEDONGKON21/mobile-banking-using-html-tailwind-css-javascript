@@ -1,4 +1,13 @@
 document.getElementById('show-add-money-form')
 .addEventListener('click',function(){
-    console.log("add meney option okk");
+    showsection('add-money-form');
+})
+
+document.getElementById('show-cash-out-form').addEventListener('click',function(){
+    showsection('cash-out-form');
+})
+
+document.getElementById('show-transaction-history').addEventListener('click', function()
+{
+    showsection('transaction-section');
 })

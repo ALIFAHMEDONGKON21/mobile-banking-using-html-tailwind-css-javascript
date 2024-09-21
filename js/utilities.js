@@ -13,7 +13,12 @@ function getTextFieldValueById(id)
     return textnumber;
 }
 
-function showsection()
+function showsection(id)
 {
-    
+    document.getElementById('add-money-form').classList.add('hidden');
+    document.getElementById('cash-out-form').classList.add('hidden');
+    document.getElementById('transaction-section').classList.add('transaction-section');
+
+    document.getElementById(id).classList.remove('hidden');
+
 }
