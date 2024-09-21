@@ -8,5 +8,12 @@ document.getElementById("btn-add-money")
         const userpass=getInputFieldValueById('input-pin-number')
         // console.table({userinput,userpass});
 
+        if(userpass === 1234)
+        {
+            const maainblance=getTextFieldValueById('account-balance');
+            const totalcash_in=maainblance+userinput;
+            console.log(totalcash_in);
+            document.getElementById('account-balance').innerText=totalcash_in;
 
-       })
+        }
+    })
