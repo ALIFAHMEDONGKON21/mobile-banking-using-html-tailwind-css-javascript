@@ -3,11 +3,13 @@ document.getElementById('show-add-money-form')
     showsection('add-money-form');
 })
 
-document.getElementById('show-cash-out-form').addEventListener('click',function(){
+document.getElementById('show-cash-out-form')
+.addEventListener('click',function(){
     showsection('cash-out-form');
 })
 
-document.getElementById('show-transaction-history').addEventListener('click', function()
+document.getElementById('show-transaction-history')
+.addEventListener('click', function()
 {
     showsection('transaction-section');
 })

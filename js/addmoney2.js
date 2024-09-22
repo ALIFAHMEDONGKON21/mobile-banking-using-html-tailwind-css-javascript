@@ -7,6 +7,11 @@ document.getElementById("btn-add-money")
         const userinput=getInputFieldValueById('input-add-money');
         const userpass=getInputFieldValueById('input-pin-number')
         // console.table({userinput,userpass});
+        if(isNaN(userinput))
+        {
+            alert("input number only");
+            return;
+        }
 
         if(userpass === 1234)
         {
@@ -15,5 +20,16 @@ document.getElementById("btn-add-money")
             console.log(totalcash_in);
             document.getElementById('account-balance').innerText=totalcash_in;
 
+            let div =document.createElement('div');
+            div.classList.add('bg-red');
+
+            div.innerHTML=`
+                <p> cash out ${userinput} blance ${totalcash_in}</p>
+            `
+            document.getElementById('transaction-section').appendChild(div);
+        }
+        else
+        {
+            alert("password no right")
         }
     })
